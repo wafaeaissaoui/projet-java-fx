@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="634.0" prefWidth="579.0" style="-fx-background-color: #fff;" styleClass="root" stylesheets="@../../assests/style/design.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AddClientController">
+   <children>
+      <Label layoutX="14.0" layoutY="64.0" text="Client" textFill="#ffffffba">
+         <font>
+            <Font name="Calibri Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="239.0" layoutY="567.0" mnemonicParsing="false" onAction="#addclient" prefHeight="32.0" prefWidth="102.0" styleClass="btn-table" stylesheets="@../../assests/style/design.css" text="AJOUTER" textFill="#ffffffcd">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <JFXTextField fx:id="tele" layoutX="127.0" layoutY="151.0" prefHeight="38.0" prefWidth="320.0" promptText="Téléphone" styleClass="txt-form" stylesheets="@../../assests/style/design.css">
+         <padding>
+            <Insets left="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField fx:id="namecl" layoutX="127.0" layoutY="218.0" prefHeight="38.0" prefWidth="320.0" promptText="Nom du client" styleClass="txt-form" stylesheets="@../../assests/style/design.css">
+         <padding>
+            <Insets left="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField fx:id="email" layoutX="127.0" layoutY="285.0" prefHeight="38.0" prefWidth="320.0" promptText="Email" styleClass="txt-form" stylesheets="@../../assests/style/design.css">
+         <padding>
+            <Insets left="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField fx:id="total_delivred" layoutX="127.0" layoutY="425.0" prefHeight="38.0" prefWidth="320.0" promptText="Commandes livrées" styleClass="txt-form" stylesheets="@../../assests/style/design.css">
+         <padding>
+            <Insets left="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField fx:id="total_canceled" layoutX="127.0" layoutY="493.0" prefHeight="38.0" prefWidth="320.0" promptText="Commandes annulée" styleClass="txt-form" stylesheets="@../../assests/style/design.css">
+         <padding>
+            <Insets left="10.0" />
+         </padding></JFXTextField>
+      <JFXComboBox fx:id="sexe" layoutX="127.0" layoutY="357.0" prefHeight="38.0" prefWidth="320.0" promptText="Sexe" styleClass="txt-form" stylesheets="@../../assests/style/design.css">
+         <padding>
+            <Insets left="10.0" />
+         </padding></JFXComboBox>
+      <Label fx:id="label1" layoutX="128.0" layoutY="195.0" prefHeight="17.0" prefWidth="269.0" textFill="RED" />
+      <Label fx:id="label2" layoutX="128.0" layoutY="262.0" prefHeight="17.0" prefWidth="269.0" textFill="RED" />
+      <Label fx:id="label3" layoutX="128.0" layoutY="329.0" prefHeight="17.0" prefWidth="269.0" textFill="RED" />
+      <Label fx:id="labell4" layoutX="128.0" layoutY="401.0" prefHeight="17.0" prefWidth="269.0" textFill="RED" />
+      <Label fx:id="label5" layoutX="128.0" layoutY="469.0" prefHeight="17.0" prefWidth="269.0" textFill="RED" />
+      <Label fx:id="label6" layoutX="128.0" layoutY="537.0" prefHeight="17.0" prefWidth="269.0" textFill="RED" />
+      <Pane prefHeight="104.0" prefWidth="579.0" style="-fx-background-color: #19334A;">
+         <children>
+            <Label layoutX="171.0" layoutY="37.0" prefHeight="32.0" prefWidth="261.0" text="AJOUTER UN CLIENT" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="closeButton" layoutX="544.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="33.0" prefWidth="35.0" styleClass="close-btn" stylesheets="@../../assests/style/design.css" text="✕" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

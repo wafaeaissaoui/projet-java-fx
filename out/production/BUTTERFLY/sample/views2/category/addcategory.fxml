@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+<?import com.jfoenix.controls.JFXTextField?>
+-->
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="542.0" prefWidth="579.0" style="-fx-background-color: #fff;" styleClass="root" stylesheets="@../../assests/style/design.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AddCategoryController">
+   <children>
+      <Button fx:id="add" layoutX="239.0" layoutY="452.0" mnemonicParsing="false" onAction="#add" prefHeight="32.0" prefWidth="102.0" styleClass="btn-table" stylesheets="@../../assests/style/design.css" text="AJOUTER" textFill="#ffffffcd">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <JFXTextField fx:id="name_ca" layoutX="130.0" layoutY="170.0" prefHeight="38.0" prefWidth="320.0" promptText="Catégorie" styleClass="txt-form" stylesheets="@../../assests/style/design.css">
+         <padding>
+            <Insets left="10.0" />
+         </padding></JFXTextField>
+      <TextArea fx:id="Description" layoutX="130.0" layoutY="254.0" prefHeight="147.0" prefWidth="320.0" promptText="Description..." styleClass="txt-form" stylesheets="@../../assests/style/design.css">
+         <padding>
+            <Insets left="4.0" />
+         </padding></TextArea>
+      <Label fx:id="label1" layoutX="131.0" layoutY="214.0" prefHeight="23.0" prefWidth="235.0" textFill="RED" />
+      <Label fx:id="label2" layoutX="131.0" layoutY="407.0" prefHeight="23.0" prefWidth="235.0" textFill="RED" />
+      <Pane prefHeight="104.0" prefWidth="579.0" style="-fx-background-color: #19334A;">
+         <children>
+            <Label layoutX="122.0" layoutY="37.0" prefHeight="32.0" prefWidth="333.0" text="AJOUTER UNE CATÉGORIE" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="closeButton" layoutX="544.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="33.0" prefWidth="35.0" styleClass="close-btn" stylesheets="@../../assests/style/design.css" text="✕" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

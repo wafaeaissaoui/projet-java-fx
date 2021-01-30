@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.validation.RequiredFieldValidator?>
+-->
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import com.jfoenix.validation.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="579.0" style="-fx-background-color: #fff;" styleClass="root" stylesheets="@../../assests/style/design.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AddProductController">
+   <children>
+      <Button fx:id="addproduct" layoutX="239.0" layoutY="567.0" mnemonicParsing="false" onAction="#addproduct" prefHeight="32.0" prefWidth="102.0" styleClass="btn-table" stylesheets="@../../assests/style/design.css" text="AJOUTER" textFill="#ffffffcd">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <JFXTextField fx:id="name_product" layoutX="131.0" layoutY="143.0" prefHeight="38.0" prefWidth="320.0" promptText="Nom du produit" styleClass="txt-form" stylesheets="@../../assests/style/design.css">
+         <padding>
+            <Insets left="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField fx:id="price" layoutX="131.0" layoutY="210.0" prefHeight="38.0" prefWidth="320.0" promptText="Prix" styleClass="txt-form" stylesheets="@../../assests/style/design.css">
+         <padding>
+            <Insets left="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField fx:id="quntity" layoutX="131.0" layoutY="277.0" prefHeight="38.0" prefWidth="320.0" promptText="Quantité" styleClass="txt-form" stylesheets="@../../assests/style/design.css">
+         <padding>
+            <Insets left="10.0" />
+         </padding></JFXTextField>
+      <TextArea fx:id="description" layoutX="131.0" layoutY="424.0" prefHeight="104.0" prefWidth="320.0" promptText="Description..." styleClass="txt-form" stylesheets="@../../assests/style/design.css">
+         <padding>
+            <Insets left="2.0" />
+         </padding></TextArea>
+      <JFXComboBox fx:id="category" layoutX="131.0" layoutY="344.0" prefHeight="38.0" prefWidth="320.0" promptText="Catégorie" styleClass="txt-form" stylesheets="@../../assests/style/design.css">
+         <padding>
+            <Insets left="10.0" />
+         </padding></JFXComboBox>
+      <RequiredFieldValidator fx:id="requiredFieldValidator" layoutX="67.0" layoutY="154.0" />
+      <RequiredFieldValidator fx:id="requiredFieldValidator1" layoutX="59.0" layoutY="224.0" />
+      <RequiredFieldValidator fx:id="requiredFieldValidator2" layoutX="67.0" layoutY="288.0" />
+      <Label fx:id="label1" layoutX="132.0" layoutY="187.0" prefHeight="17.0" prefWidth="359.0" textFill="RED" />
+      <Label fx:id="label2" layoutX="132.0" layoutY="254.0" prefHeight="17.0" prefWidth="359.0" textFill="RED" />
+      <Label fx:id="label3" layoutX="132.0" layoutY="321.0" prefHeight="17.0" prefWidth="359.0" textFill="RED" />
+      <Label fx:id="label4" layoutX="132.0" layoutY="388.0" prefHeight="17.0" prefWidth="359.0" textFill="RED" />
+      <Label fx:id="label5" layoutX="132.0" layoutY="534.0" prefHeight="17.0" prefWidth="359.0" textFill="RED" />
+      <Pane prefHeight="104.0" prefWidth="579.0" style="-fx-background-color: #19334A;">
+         <children>
+            <Label layoutX="171.0" layoutY="37.0" prefHeight="32.0" prefWidth="261.0" text="AJOUTER UN PRODUIT" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="closeButton" layoutX="544.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="33.0" prefWidth="35.0" styleClass="close-btn" stylesheets="@../../assests/style/design.css" text="✕" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

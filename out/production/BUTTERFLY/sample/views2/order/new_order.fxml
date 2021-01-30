@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+-->
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="579.0" style="-fx-background-color: #FFF;" styleClass="root" stylesheets="@../../assests/style/design.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AddorderController">
+   <children>
+      <Label layoutX="24.0" layoutY="74.0" text="Client" textFill="#ffffffba">
+         <font>
+            <Font name="Calibri Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="Addorder" layoutX="239.0" layoutY="576.0" mnemonicParsing="false" onAction="#Addorder" prefHeight="32.0" prefWidth="102.0" styleClass="btn-table" stylesheets="@../../assests/style/design.css" text="AJOUTER" textFill="#ffffffcd">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="24.0" layoutY="303.0" text="Order" textFill="#ffffffba">
+         <font>
+            <Font name="Calibri Bold Italic" size="25.0" />
+         </font>
+      </Label>
+
+      <JFXTextField fx:id="status" layoutX="123.0" layoutY="430.0" prefHeight="38.0" prefWidth="320.0" promptText="Status" styleClass="txt-form" stylesheets="@../../assests/style/design.css">
+         <padding>
+            <Insets left="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField fx:id="quality" layoutX="123.0" layoutY="286.0" prefHeight="38.0" prefWidth="320.0" promptText="Quantité" styleClass="txt-form" stylesheets="@../../assests/style/design.css">
+         <padding>
+            <Insets left="10.0" />
+         </padding></JFXTextField>
+      <JFXTextField fx:id="price" layoutX="123.0" layoutY="358.0" prefHeight="38.0" prefWidth="320.0" promptText="Prix" styleClass="txt-form" stylesheets="@../../assests/style/design.css">
+         <padding>
+            <Insets left="10.0" />
+         </padding></JFXTextField>
+      <ComboBox fx:id="name_client" layoutX="123.0" layoutY="143.0" prefHeight="38.0" prefWidth="320.0" promptText="Nom du client" styleClass="txt-form" stylesheets="@../../assests/style/design.css">
+         <padding>
+            <Insets left="5.0" />
+         </padding></ComboBox>
+      <ComboBox fx:id="name_product" layoutX="123.0" layoutY="214.0" prefHeight="38.0" prefWidth="320.0" promptText="Produit" styleClass="txt-form" stylesheets="@../../assests/style/design.css">
+         <padding>
+            <Insets left="5.0" />
+         </padding></ComboBox>
+      <!--
+      <JFXDatePicker fx:id="date" defaultColor="#188fad" layoutX="39.0" layoutY="436.0" prefHeight="40.0" prefWidth="240.0" />
+      -->
+      <Label fx:id="label1" layoutX="124.0" layoutY="187.0" prefHeight="17.0" prefWidth="338.0" textFill="RED" />
+      <Label fx:id="labell2" layoutX="124.0" layoutY="258.0" prefHeight="17.0" prefWidth="338.0" textFill="RED" />
+      <Label fx:id="label3" layoutX="124.0" layoutY="330.0" prefHeight="17.0" prefWidth="338.0" textFill="RED" />
+      <Label fx:id="label4" layoutX="124.0" layoutY="402.0" prefHeight="17.0" prefWidth="338.0" textFill="RED" />
+      <Label fx:id="label5" layoutX="124.0" layoutY="474.0" prefHeight="17.0" prefWidth="338.0" textFill="RED" />
+      <Label fx:id="label6" layoutX="124.0" layoutY="546.0" prefHeight="17.0" prefWidth="338.0" textFill="RED" />
+      <Pane prefHeight="104.0" prefWidth="579.0" style="-fx-background-color: #19334A;">
+         <children>
+            <Label layoutX="119.0" layoutY="37.0" prefHeight="32.0" prefWidth="356.0" text="AJOUTER UNE COMMANDE" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="closeButton" layoutX="544.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="33.0" prefWidth="35.0" styleClass="close-btn" stylesheets="@../../assests/style/design.css" text="✕" textFill="WHITE" />
+         </children>
+      </Pane>
+      <DatePicker fx:id="date" layoutX="123.0" layoutY="502.0" prefHeight="38.0" prefWidth="320.0" promptText="Date" styleClass="txt-form" stylesheets="@../../assests/style/design.css" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="585.0" prefWidth="745.0" style="-fx-background-color: #6E6E6E;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane layoutX="57.0" layoutY="135.0" prefHeight="339.0" prefWidth="632.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="333.0" minHeight="10.0" prefHeight="269.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TableView prefHeight="333.0" prefWidth="652.0" stylesheets="@../assests/style/style.css">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="#" />
+                  <TableColumn prefWidth="75.0" text="name" />
+                  <TableColumn prefWidth="75.0" text="email" />
+                  <TableColumn prefWidth="75.0" text="tele" />
+                  <TableColumn prefWidth="75.0" text="sexe" />
+                  <TableColumn prefWidth="75.0" text="commande" />
+                  <TableColumn prefWidth="75.0" text="total" />
+               </columns>
+               <effect>
+                  <DropShadow color="#d7d1d1" />
+               </effect>
+            </TableView>
+         </children>
+      </GridPane>
+      <Button layoutX="554.0" layoutY="57.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #FE9A2E;" text="search" textFill="WHITE" />
+      <TextField layoutX="42.0" layoutY="57.0" promptText="name client" />
+      <ComboBox layoutX="360.0" layoutY="57.0" prefWidth="150.0" promptText="order" style="-fx-background-color: #fff;" />
+      <TextField layoutX="202.0" layoutY="57.0" promptText="number phone" />
+      <Button layoutX="435.0" layoutY="540.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: #DF0101;" text="delete" textFill="WHITE" />
+      <Button layoutX="287.0" layoutY="540.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: #2EFE2E;" text="Edit" textFill="WHITE" />
+      <Button layoutX="574.0" layoutY="540.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: #F7FE2E;" text="Add" textFill="WHITE" />
+      <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" layoutX="568.0" layoutY="73.0" wrappingWidth="11.142857551574707" />
+      <FontAwesomeIconView fill="WHITE" glyphName="PLUS" layoutX="589.0" layoutY="557.0" text="" />
+      <FontAwesomeIconView fill="WHITE" glyphName="TRASH" layoutX="449.0" layoutY="557.0" text="" />
+      <FontAwesomeIconView fill="WHITE" glyphName="EDIT" layoutX="305.0" layoutY="557.0" />
+   </children>
+   <effect>
+      <DropShadow color="#cdc7c7" />
+   </effect>
+</AnchorPane>

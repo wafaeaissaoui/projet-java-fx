@@ -1,0 +1,121 @@
+.parent{
+    -fx-background-color: #FDFDFE;
+    -fx-background-radis:10%;
+}
+.sidebar{
+    -fx-background-color: #FFF8E6;
+}
+.butt{
+-fx-background-color: #FFF8E6;
+}
+.button:hover{
+-fx-background-color: #848484;
+}
+.close-btn{
+    -fx-background-color: #FF6058;
+    -fx-background-radius: 100%;
+}
+.close-btn:hover{
+    -fx-background-color: red;
+    -fx-background-radius: 100%;
+}
+.min-btn{
+    -fx-background-color: #27CA41;
+    -fx-background-radius: 100%;
+}
+.min-btn:hover{
+    -fx-background-color: green;
+    -fx-background-radius: 100%;
+}
+.max-btn{
+    -fx-background-color: #FFBD2D;
+    -fx-background-radius: 100%;
+}
+.max-btn:hover{
+    -fx-background-color: yellow;
+    -fx-background-radius: 100%;
+}
+.create-logo-btn{
+    -fx-background-color: #A4A4A4;
+    -fx-background-radius: 5px;
+}
+.sidebar-btns{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+}
+.sidebar-btns:hover{
+    -fx-background-color: #FDFDFE;
+    -fx-background-radius: 5px;
+}
+.white-round-carts{
+    -fx-background-color: #fff;
+    -fx-background-radius: 20px;
+}
+.white-round-strip{
+    -fx-background-color: #fff;
+    -fx-background-radius: 10px;
+}
+.round-btn{
+    -fx-background-color: #F5F8FF;
+    -fx-background-radius: 100%;
+}
+
+.root{
+    -fx-background-color: #262626;
+}
+
+.table-view{
+   -fx-background-color: transparent;
+
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+/* Spaltenköpfe
+    Struktur column-header-background -> column-header */
+
+.table-view .column-header-background{
+    -fx-background-color:    #188FAD;
+    -fx-background-insets:0 0 10 0;
+    -fx-padding:0 0 10 0;
+
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header ,.table-view .filler {
+      -fx-size:40;
+      -fx-border-withe:0 0 10 0;
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: #000;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #F2F2F2;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #fff;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #005797;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+
+
+
